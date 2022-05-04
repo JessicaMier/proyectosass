@@ -1,0 +1,285 @@
+$color1: linear-gradient(orange, rgb(218, 89, 50));
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+nav {
+    background-image: $color1;
+}
+.nav-link{
+    font-size: 18px;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    font-size: 20px;
+    color: aliceblue;
+}
+
+
+.jumbotron {
+    background-image: url(../media/img/vegetales.jpg);
+    height: 450PX;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(247, 246, 241);
+    text-shadow: 5px 5px 10PX black;
+    background-size: cover;
+    background-position: bottom;
+}
+body {
+    background-image:$color1;
+}
+
+/*-----------------------galeria-----------------------------*/
+.tituloG {
+    text-align: center;
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: 40px;
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+}
+
+.grilla {
+    min-height: 800px;
+    width: 100%;
+    background-color:$color1; 
+    display: grid;
+    padding: 20px;
+    gap: 10px;
+}
+
+.item {
+    border-radius: 7px;
+    box-shadow: 0 0 5px darkslategray;
+    transition: all 0.7s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    transition: all 0.7s;
+}
+
+.item1 {
+    border: 2px solid black;
+    background-image: url(../media/img/empanadas.fritas.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item2 {
+    background-image: url(../media/img/panaderia.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item3 {
+    background-image: url(../media/img/pasteles.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item4 {
+    background-image: url(../media/img/sushi.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item5 {
+    background-image: url(../media/img/empanadas2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item6 {
+    background-image: url(../media/img/fideos.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item7 {
+    background-image: url(../media/img/galletas.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item8 {
+    background-image: url(../media/img/Pizza.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (min-width:320px) and (max-width:479) {
+    .item {
+        height: 175px;
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+    .grilla {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .grilla {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .item1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .item2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .item3 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .item4 {
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+
+    .item5 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .item6 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .item7 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .item8 {
+        grid-column: 2/4;
+        grid-row: 3/4;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .grilla {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .item {
+        height: auto;
+    }
+
+    .item1 {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .item2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .item3 {
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+
+    .item4 {
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
+
+    .item5 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .item6 {
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+
+    .item7 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .item8 {
+        grid-column: 3/5;
+        grid-row: 3/4;
+    }
+
+}
+
+/*---------------------------novedades---------------------------*/
+.card img:hover {
+    transform: scale(1.03);
+    transition: all 1s;
+}
+
+.card-body:hover {
+    transform: scale(1.05);
+    transition: all 1s;
+}
+
+/*---------------------contacto-----------------------------*/
+.textoFormulario p {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+    transition: all 1s;
+    transform: scale(1.05);
+}
+
+.textoFormulario:hover {
+    transform: scale(1.05);
+    transition: all 1s;
+}
+
+
+/*-------------------------------footer.......................................*/
+
+footer {
+    background-image: $color1;
+    font-size: 40px;
+    height: 180px;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 20px;
+        p {
+            font-style: italic;
+            font-size: 40px;
+            background-color: rgb(26, 2, 2);
+            color: aliceblue;
+            background-size: cover;
+        }
+            i {
+                height: 80px;
+                width: 80px;
+                font-size: 50px;
+                color: black;
+                transition: all 1s;
+                }
+                    i:hover {
+                        color: rgb(10, 59, 102);
+                        transform: scale(1.3);
+                        transition: all 0.7s;    
+                        }
+}
