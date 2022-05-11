@@ -53,6 +53,7 @@ body {
   justify-content: space-around;
 }
 
+/*-------------------mapa-------------------------------------*/
 .promo-orange {
   color: orange;
   background-color: black;
@@ -285,6 +286,7 @@ body {
 }
 /*---------------------------novedades---------------------------*/
 .card img:hover {
+  border: 5px solid #333;
   transform: scale(1.03);
   transition: all 1s;
 }
