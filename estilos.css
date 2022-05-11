@@ -34,8 +34,66 @@ body {
   background-image: linear-gradient(orange, rgb(218, 89, 50));
 }
 
+/*-----------------------------------menu---------------------------*/
+.promoNueva {
+  text-align: center;
+  font-size: 30px;
+  display: block;
+  background-color: black;
+  color: aliceblue;
+  text-transform: uppercase;
+  font-style: italic;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.promociones {
+  display: flex;
+  justify-content: space-around;
+}
+
+.promo-orange {
+  color: orange;
+  background-color: black;
+  height: 250px;
+  width: 250px;
+  border: 5px solid orange;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 20px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.promo-grey {
+  color: grey;
+  background-color: black;
+  height: 250px;
+  width: 250px;
+  border: 5px solid grey;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 22px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.promo-aliceblue {
+  color: aliceblue;
+  background-color: black;
+  height: 250px;
+  width: 250px;
+  border: 5px solid aliceblue;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 24px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
 /*-----------------------galeria-----------------------------*/
-.tituloG {
+.tituloG, .textoFormulario p {
   text-align: center;
   text-transform: capitalize;
   font-style: italic;
@@ -66,50 +124,57 @@ body {
 }
 
 .item1 {
-  border: 2px solid black;
   background-image: url(../media/img/empanadas.fritas.jpg);
+  border: 2px solid black;
   background-size: cover;
   background-position: center;
 }
 
 .item2 {
   background-image: url(../media/img/panaderia.jpg);
+  border: 2px solid black;
   background-size: cover;
   background-position: center;
 }
 
 .item3 {
   background-image: url(../media/img/pasteles.jpg);
+  border: 2px solid black;
   background-size: cover;
   background-position: center;
 }
 
 .item4 {
   background-image: url(../media/img/sushi.jpg);
+  border: 2px solid black;
   background-size: cover;
   background-position: center;
 }
 
 .item5 {
   background-image: url(../media/img/empanadas2.jpg);
+  border: 2px solid black;
   background-size: cover;
   background-position: center;
 }
 
 .item6 {
   background-image: url(../media/img/fideos.jpg);
+  border: 2px solid black;
   background-size: cover;
   background-position: center;
 }
 
 .item7 {
   background-image: url(../media/img/galletas.jpg);
+  border: 2px solid black;
   background-size: cover;
   background-position: center;
 }
 
 .item8 {
   background-image: url(../media/img/Pizza.jpg);
+  border: 2px solid black;
   background-size: cover;
   background-position: center;
 }
@@ -231,10 +296,6 @@ body {
 
 /*---------------------contacto-----------------------------*/
 .textoFormulario p {
-  background-color: black;
-  color: aliceblue;
-  text-align: center;
-  font-size: 30px;
   transition: all 1s;
   transform: scale(1.05);
 }
@@ -272,6 +333,4 @@ footer i:hover {
   color: rgb(10, 59, 102);
   transform: scale(1.3);
   transition: all 0.7s;
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */

@@ -11,10 +11,12 @@ $color1: linear-gradient(orange, rgb(218, 89, 50));
 nav {
     background-image: $color1;
 }
-.nav-link{
+
+.nav-link {
     font-size: 18px;
 }
-.navbar-nav .nav-item .nav-link:hover{
+
+.navbar-nav .nav-item .nav-link:hover {
     font-size: 20px;
     color: aliceblue;
 }
@@ -32,8 +34,49 @@ nav {
     background-size: cover;
     background-position: bottom;
 }
+
 body {
-    background-image:$color1;
+    background-image: $color1;
+}
+/*-----------------------------------menu---------------------------*/
+.promoNueva{
+    text-align: center;
+    font-size: 30px;
+    display: block;
+    background-color: black;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-style: italic;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.promociones{
+    display: flex;
+    justify-content: space-around;
+}
+
+$promos: (
+    20px: orange,
+    22px: grey,
+    24px: aliceblue,
+);
+
+@each $size , $colores in $promos {
+    .promo-#{$colores} { 
+        color: $colores;
+        background-color: black;
+        height: 250px;
+        width: 250px;
+        border: 5px solid $colores;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: $size;
+        padding-top: 30px;
+        margin-bottom: 30px;
+    }
+    
 }
 
 /*-----------------------galeria-----------------------------*/
@@ -50,7 +93,7 @@ body {
 .grilla {
     min-height: 800px;
     width: 100%;
-    background-color:$color1; 
+    background-color: $color1;
     display: grid;
     padding: 20px;
     gap: 10px;
@@ -67,53 +110,50 @@ body {
     transition: all 0.7s;
 }
 
-.item1 {
+@mixin back {
     border: 2px solid black;
-    background-image: url(../media/img/empanadas.fritas.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.item1 {
+    background-image: url(../media/img/empanadas.fritas.jpg);
+    @include back;
 }
 
 .item2 {
     background-image: url(../media/img/panaderia.jpg);
-    background-size: cover;
-    background-position: center;
+    @include back;
 }
 
 .item3 {
     background-image: url(../media/img/pasteles.jpg);
-    background-size: cover;
-    background-position: center;
+    @include back;
 }
 
 .item4 {
     background-image: url(../media/img/sushi.jpg);
-    background-size: cover;
-    background-position: center;
+    @include back;
 }
 
 .item5 {
     background-image: url(../media/img/empanadas2.jpg);
-    background-size: cover;
-    background-position: center;
+    @include back;
 }
 
 .item6 {
     background-image: url(../media/img/fideos.jpg);
-    background-size: cover;
-    background-position: center;
+    @include back;
 }
 
 .item7 {
     background-image: url(../media/img/galletas.jpg);
-    background-size: cover;
-    background-position: center;
+    @include back;
 }
 
 .item8 {
     background-image: url(../media/img/Pizza.jpg);
-    background-size: cover;
-    background-position: center;
+    @include back;
 }
 
 @media only screen and (min-width:320px) and (max-width:479) {
@@ -239,10 +279,7 @@ body {
 
 /*---------------------contacto-----------------------------*/
 .textoFormulario p {
-    background-color: black;
-    color: aliceblue;
-    text-align: center;
-    font-size: 30px;
+    @extend .tituloG;
     transition: all 1s;
     transform: scale(1.05);
 }
@@ -263,23 +300,26 @@ footer {
     text-align: center;
     text-transform: capitalize;
     padding: 20px;
-        p {
-            font-style: italic;
-            font-size: 40px;
-            background-color: rgb(26, 2, 2);
-            color: aliceblue;
-            background-size: cover;
-        }
-            i {
-                height: 80px;
-                width: 80px;
-                font-size: 50px;
-                color: black;
-                transition: all 1s;++
-                }
-                    i:hover {
-                        color: rgb(10, 59, 102);
-                        transform: scale(1.3);
-                        transition: all 0.7s;    
-                        }
+
+    p {
+        font-style: italic;
+        font-size: 40px;
+        background-color: rgb(26, 2, 2);
+        color: aliceblue;
+        background-size: cover;
+    }
+
+    i {
+        height: 80px;
+        width: 80px;
+        font-size: 50px;
+        color: black;
+        transition: all 1s;
+    }
+
+    i:hover {
+        color: rgb(10, 59, 102);
+        transform: scale(1.3);
+        transition: all 0.7s;
+    }
 }
