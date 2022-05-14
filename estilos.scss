@@ -1,4 +1,4 @@
-$color1: linear-gradient(orange, rgb(218, 89, 50));
+$color1: linear-gradient(rgb(235, 178, 72), rgb(226, 131, 6), rgb(240, 95, 27));
 
 * {
     margin: 0%;
@@ -75,9 +75,9 @@ $promos: (
         font-size: $size;
         padding-top: 30px;
         margin-bottom: 30px;
-    }
-    
+    }    
 }
+
 
 /*-----------------------galeria-----------------------------*/
 .tituloG {
@@ -289,6 +289,78 @@ $promos: (
     transform: scale(1.05);
     transition: all 1s;
 }
+.flexContainer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(58, 56, 56);
+    justify-content: center;
+    margin-bottom: 20px;
+    .form{
+        min-width: 400px;
+        flex: 1;
+        text-align: center;
+        padding: 30px;
+        order: 5;
+        
+    }
+
+    .formImput{
+        font-size: 20px;
+        background: $color1;
+        width: 80%;
+        padding: 10px;
+        margin: 10px;
+        border-bottom: 3px solid rgb(2, 2, 1);
+    }
+    .ubica{
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        text-transform: capitalize;
+        font-size: 30px;
+        font-style: italic;
+        text-shadow: 0 0 5px rgb(209, 191, 129);
+    }
+    .formImg{
+        flex: 1;
+        display: flex;
+        text-align: center;
+        min-width: 300px;
+        max-width: 400px;
+        order: 2 ;
+        img{
+            display: flex;
+            width: 60%;
+            margin: auto;
+            text-align: center;
+        }
+    }
+
+    .terminos{
+        font-size: 24px;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 10px;
+        background: $color1
+    }
+    .casilla-terminos{
+        height: 30px;
+        width: 30px;
+        margin: 15px
+    }
+    .text-terminos{
+        @extend .ubica;
+    }
+}
+.mapa{
+    text-align: center;
+    p{
+        background-color: black;
+        color: aliceblue;
+        font-size: 30px;
+    }
+}
 
 
 /*-------------------------------footer.......................................*/
@@ -309,6 +381,7 @@ footer {
         color: aliceblue;
         background-size: cover;
     }
+
 
     i {
         height: 80px;

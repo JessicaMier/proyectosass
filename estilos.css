@@ -5,7 +5,7 @@
 }
 
 nav {
-  background-image: linear-gradient(orange, rgb(218, 89, 50));
+  background-image: linear-gradient(rgb(235, 178, 72), rgb(226, 131, 6), rgb(240, 95, 27));
 }
 
 .nav-link {
@@ -31,7 +31,7 @@ nav {
 }
 
 body {
-  background-image: linear-gradient(orange, rgb(218, 89, 50));
+  background-image: linear-gradient(rgb(235, 178, 72), rgb(226, 131, 6), rgb(240, 95, 27));
 }
 
 /*-----------------------------------menu---------------------------*/
@@ -107,7 +107,7 @@ body {
 .grilla {
   min-height: 800px;
   width: 100%;
-  background-color: linear-gradient(orange, rgb(218, 89, 50));
+  background-color: linear-gradient(rgb(235, 178, 72), rgb(226, 131, 6), rgb(240, 95, 27));
   display: grid;
   padding: 20px;
   gap: 10px;
@@ -307,9 +307,76 @@ body {
   transition: all 1s;
 }
 
+.flexContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(58, 56, 56);
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.flexContainer .form {
+  min-width: 400px;
+  flex: 1;
+  text-align: center;
+  padding: 30px;
+  order: 5;
+}
+.flexContainer .formImput {
+  font-size: 20px;
+  background: linear-gradient(rgb(235, 178, 72), rgb(226, 131, 6), rgb(240, 95, 27));
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 3px solid rgb(2, 2, 1);
+}
+.flexContainer .ubica, .flexContainer .text-terminos {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-style: italic;
+  text-shadow: 0 0 5px rgb(209, 191, 129);
+}
+.flexContainer .formImg {
+  flex: 1;
+  display: flex;
+  text-align: center;
+  min-width: 300px;
+  max-width: 400px;
+  order: 2;
+}
+.flexContainer .formImg img {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+.flexContainer .terminos {
+  font-size: 24px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  background: linear-gradient(rgb(235, 178, 72), rgb(226, 131, 6), rgb(240, 95, 27));
+}
+.flexContainer .casilla-terminos {
+  height: 30px;
+  width: 30px;
+  margin: 15px;
+}
+.mapa {
+  text-align: center;
+}
+.mapa p {
+  background-color: black;
+  color: aliceblue;
+  font-size: 30px;
+}
+
 /*-------------------------------footer.......................................*/
 footer {
-  background-image: linear-gradient(orange, rgb(218, 89, 50));
+  background-image: linear-gradient(rgb(235, 178, 72), rgb(226, 131, 6), rgb(240, 95, 27));
   font-size: 40px;
   height: 180px;
   width: 100%;
